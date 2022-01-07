@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example4</title>
+</head>
+
+<body>
+    <h4>Bài 1</h4>
+    <button onclick="go()">Start</button>
+    <script>
+        function go() {
+            let browser = prompt("Bạn đang dùng trình duyệt nào?")
+            switch (browser) {
+                case 'Edge':
+                    alert("You've got the Edge!");
+                    break;
+                case 'Chrome':
+                case 'Firefox':
+                case 'Safari':
+                case 'Opera':
+                    alert('Okay we support these browsers too');
+                    break;
+                default:
+                    alert('We hope that this page looks ok!');
+            }
+        }
+    </script>
+    <h4>Bài 2</h4>
+    <button onclick="start()">Start</button>
+    <script>
+        function start() {
+            let a = prompt('a?', '');
+            switch (Number(a)) {
+                case 0:
+                    alert(0);
+                    break;
+                case 1:
+                    alert(1);
+                    break;
+                case 2:
+                case 3:
+                    alert('2,3');
+                    break;
+            }
+        }
+
+    </script>
+    <h4>Bài 3</h4>
+    <button onclick="buh()">Start</button>
+    <script>
+        function buh() {
+            let value = prompt('Type a number', 0);
+            switch (Number(value)) {
+                case -5:
+                case -4:
+                case -3:
+                case -2:
+                case -1:
+                    alert(-1);
+                    break;
+                case 0:
+                    alert(0);
+                    break
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    alert(1);
+                    break
+                default:
+                    alert("Số này không nằm trong mục so sánh :v")
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
